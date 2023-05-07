@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { sayHello } from '@wanted/lib'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { sayHello } from "@wanted/lib";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -22,12 +22,10 @@ export default function Home() {
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
 
-
           <p>
             의존성 테스트&nbsp;
             <code className={styles.code}>{sayHello()}</code>
           </p>
-
 
           <div>
             <a
@@ -35,7 +33,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -119,5 +117,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
