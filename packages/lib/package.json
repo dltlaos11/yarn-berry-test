@@ -1,9 +1,11 @@
 {
   "name": "@wanted/lib",
-  "version": "1.0.0",
-  "private": true,
+  "packageManager": "yarn@3.5.1",
   "main": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
   "dependencies": {
-    "typescript": "^4.9.3"
+    "typescript": "^5.0.4"
   }
 }
